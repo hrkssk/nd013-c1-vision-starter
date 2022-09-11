@@ -141,6 +141,9 @@ python inference_video.py --labelmap_path label_map.pbtxt --model_path experimen
 ## Submission Template
 
 ### Project overview
+This is a copyed repository from [Udacity's original one](https://github.com/udacity/nd013-c1-vision-starter).By using data from the [Waymo Open dataset](https://waymo.com/open/) and [Object Detection api](https://github.com/tensorflow/models/tree/master/research/object_detection), we can tested many kinds of the dnn models and learning parameters.
+For safety driving, Self-Driving car systems needs perception about drivable space on the road. Object detection is a function to detect the obstacles such as other cars, pedestrians, bycicles. Object detection allows the systems to recognize free spaces where it is safe to drive.
+
 This section should contain a brief description of the project and what we are trying to achieve. Why is object detection such an important component of self driving car systems?
 
 ### Set up
