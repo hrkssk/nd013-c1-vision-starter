@@ -149,14 +149,15 @@ I used Classroom Workspace. If you can not use Classroom Workspace, you can crea
 
 ### Dataset
 #### Dataset analysis
-Images in the dataset was captured on various illumint conditions, climates, and locations.
+Images in the dataset were captured on various illumint conditions, climates, and locations.
 ![Example images on the Dataset](https://user-images.githubusercontent.com/92769537/189526233-6b128166-7ac4-4fbb-83d0-080913a4fb70.png)
 
 Red boxes are representation of cars, Blue ones are Pedestrians, Green ones are Bycicles. 
 ![Example Visualized Bounding boxes on the dataset](https://user-images.githubusercontent.com/92769537/189526751-6e6dd6ff-380c-4196-b9b9-2f15cbb29975.png)
 
 #### Cross validation
-This section should detail the cross validation strategy and justify your approach.
+Cross validation is a technique to evaluate the overfitting of CNN models. We have to split dataset into train, validation, and test.
+In the workspace, the dataset was splited. train has 1791(70%), validation has 198(7%), test has 596(23%).
 
 ### Training
 #### Reference experiment
