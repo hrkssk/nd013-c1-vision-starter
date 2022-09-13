@@ -163,16 +163,16 @@ In the workspace, the dataset has already splited, train set - 1791 images(70%),
 #### Reference experiment
 This is the results of reference experiment. The all results of Recall are nearly zero. It means this model can not detect the object on the road.The reason of low recall is that the regularization loss of the training model is too high. It shows that the model is not convergence, and Learning rate is high.
 
-Validation result of "Recall"
+Validation result of "Recall"  
 ![ref_recall](https://user-images.githubusercontent.com/92769537/189836650-43770c6a-b9ba-4e18-93c9-84c415f9e753.png)
 
-Validation result of "Precision"
+Validation result of "Precision"  
 ![ref_precision](https://user-images.githubusercontent.com/92769537/189837354-3a168946-7657-4818-ba1f-ad2d4e53fa39.png)
 
-Loss of Reference experiment
+Loss of Reference experiment  
 ![ref_loss](https://user-images.githubusercontent.com/92769537/189835851-34ab4ba1-0478-439d-9e9e-eaa366638445.png)
 
-Learning rate of Reference experiment
+Learning rate of Reference experiment  
 ![ref_lr](https://user-images.githubusercontent.com/92769537/189839613-5a4582d1-11b2-4af6-b070-4f3c0813c3aa.png)
 
 #### Improve on the reference
