@@ -161,8 +161,7 @@ In the workspace, the dataset has already splited, train set - 1791 images(70%),
 
 ### Training
 #### Reference experiment
-This is the results of reference experiment. The all results of Recall are nearly zero. It means this model can not detect the object on the road.
-The reason of this result is the regularization loss of the training model is too high. We changed the batch size from 64 to 2, but learning rate isn't changed. The learning rate should also be changed the same rate of the batch size change rate.
+This is the results of reference experiment. The all results of Recall are nearly zero. It means this model can not detect the object on the road.The reason of low recall is that the regularization loss of the training model is too high. It shows that the model is not convergence, and Learning rate is high.
 
 Validation result of "Recall"
 ![ref_recall](https://user-images.githubusercontent.com/92769537/189836650-43770c6a-b9ba-4e18-93c9-84c415f9e753.png)
@@ -177,4 +176,5 @@ Learning rate of Reference experiment
 ![ref_lr](https://user-images.githubusercontent.com/92769537/189839613-5a4582d1-11b2-4af6-b070-4f3c0813c3aa.png)
 
 #### Improve on the reference
-This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+The reference config file was quated from [Object Detection api](https://github.com/tensorflow/models/tree/master/research/object_detection), so each parametor was optimized. Nevertheless the result of the reference experiment was too bad. In the previous experiment we changed the batch size from 64 to 2, but learning rate wasn't changed. The learning rate should also be changed the same rate of the batch size. and we did'nt use data augumentation. In this experiment, I was changed the learning rate from 0.04 to 0.00125, and I used some data augumantations, for example, ***.
+
