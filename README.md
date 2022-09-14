@@ -178,7 +178,9 @@ Learning rate of Reference experiment
 #### Improve on the reference
 The reference config file was quated from [Object Detection api](https://github.com/tensorflow/models/tree/master/research/object_detection), so each parametor was optimized. Nevertheless the result of the reference experiment was too bad. In the previous experiment we changed the batch size from 64 to 2, but learning rate wasn't changed. The learning rate should also be changed. In this experiment, I was changed the learning rate, and for better performance in the night conditions, I added three data augumantations, random_rgb_to_gray, random_adjust_contrast, and random_adjust_brightness.
 
-The results of 2nd experiment is better convergence than reference. The Totall loss changed from 140 to 0.6, and the regulalization loss changed from 140 to 0.242. 
+The results of 2nd experiment is better convergence than reference. The Totall loss changed from 140 to 0.6, and the regulalization loss changed from 140 to 0.2415. "example image in Validation" shows that this models can detect the objects on the road. and "animation.gif" shows that this model adapted in the nignt conditions. 
+
+For further improvement, we must be able to detect small objects. the results of "Precision" and "Recall" shows that this model can not detect the small objects. It is said that SSD is not good at detecting small objects. we have to evaluate the different architecture, for example Centernet. Centernet is anchorfree architecture, it may have good performance than SSD to the small objects.
 
 Validation result of "Recall"  
 ![exp0_recall](https://user-images.githubusercontent.com/92769537/190252036-31ebffa8-752a-4e00-8842-41d93d6fd4ea.png)
