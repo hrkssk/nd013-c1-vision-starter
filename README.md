@@ -193,3 +193,6 @@ Loss of Reference experiment
 
 example image in Validation
 ![exp0_eval0](https://user-images.githubusercontent.com/92769537/190252600-d9387053-5f05-43b1-8157-373996d82d62.png)
+
+animation.gif  
+![resize_sample](https://user-images.githubusercontent.com/92769537/190262630-322f6d8d-774a-4968-a6dd-cb07552c7523.gif)
