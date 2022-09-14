@@ -176,5 +176,18 @@ Learning rate of Reference experiment
 ![ref_lr](https://user-images.githubusercontent.com/92769537/189839613-5a4582d1-11b2-4af6-b070-4f3c0813c3aa.png)
 
 #### Improve on the reference
-The reference config file was quated from [Object Detection api](https://github.com/tensorflow/models/tree/master/research/object_detection), so each parametor was optimized. Nevertheless the result of the reference experiment was too bad. In the previous experiment we changed the batch size from 64 to 2, but learning rate wasn't changed. The learning rate should also be changed the same rate of the batch size. and we did'nt use data augumentation. In this experiment, I was changed the learning rate from 0.04 to 0.00125, and I used some data augumantations, for example, ***.
+The reference config file was quated from [Object Detection api](https://github.com/tensorflow/models/tree/master/research/object_detection), so each parametor was optimized. Nevertheless the result of the reference experiment was too bad. In the previous experiment we changed the batch size from 64 to 2, but learning rate wasn't changed. The learning rate should also be changed. In this experiment, I was changed the learning rate, and for better performance in the night conditions, I added three data augumantations, random_rgb_to_gray, random_adjust_contrast, and random_adjust_brightness.
 
+The results of 2nd experiment is better convergence than reference. The Totall loss changed from 140 to 0.6, and the regulalization loss changed from 140 to 0.242. 
+
+Validation result of "Recall"  
+![exp0_recall](https://user-images.githubusercontent.com/92769537/190252036-31ebffa8-752a-4e00-8842-41d93d6fd4ea.png)
+
+Validation result of "Precision"  
+![exp0_precision](https://user-images.githubusercontent.com/92769537/190252086-6653b10b-cc4e-4ee0-8c28-4d939d2b722d.png)
+
+Loss of Reference experiment  
+![exp0_loss](https://user-images.githubusercontent.com/92769537/190252181-b440044b-492f-452a-9e24-10990a2dc693.png)
+
+example image in Validation
+![exp0_eval0](https://user-images.githubusercontent.com/92769537/190252600-d9387053-5f05-43b1-8157-373996d82d62.png)
